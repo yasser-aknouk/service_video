@@ -1,0 +1,21 @@
+type Query {
+    videoList : [Video]
+    creatorByID(id :Float) : Creator
+}
+
+type Creator {
+    id : Float,
+    name : String ,
+    email : String,
+
+}
+
+type Video {
+    id : Float,
+    name : String,
+    url : String,
+    description :String ,
+    datePublication :String,
+    creator : Creator
+
+}
